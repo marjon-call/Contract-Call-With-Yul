@@ -4,7 +4,7 @@ A contract, entirely written in yul, can call a solidity contract.
 A user can call ```CallTestContractYul.sol``` in order to call ```test.sol```.
 
 ```test.sol```
-Contains one function, ```add(uint8,uint8) external view returns(uint8)```, that takes 2 uint8s and as paramaters and returns the sum.
+Contains one function, ```add(uint8,uint8) external view returns(uint8)```, that takes 2 uint8s as paramaters and returns the sum.
 
 ```CallTestContractYul.sol```
 Contains one function that can only be called through txdata. To call the function the fist byte of your calldata must be 0x01.
